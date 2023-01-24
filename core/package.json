@@ -1,0 +1,53 @@
+{
+  "name": "@ulixee/hero-core",
+  "version": "2.0.0-alpha.18",
+  "description": "The core browser API used to run Hero",
+  "homepage": "https://ulixee.org",
+  "repository": "git@github.com:ulixee/hero.git",
+  "bugs": {
+    "url": "https://github.com/ulixee/hero/issues"
+  },
+  "license": "MIT",
+  "author": "Data Liberation Foundation",
+  "contributors": [
+    "Caleb Clark",
+    "Blake Byrnes"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./lib/*": "./lib/*.js",
+    "./dbs": "./dbs",
+    "./dbs/*": "./dbs/*.js",
+    "./models/*": "./models/*.js",
+    "./connections/*": "./connections/*.js"
+  },
+  "dependencies": {
+    "@ulixee/awaited-dom": "1.4.1",
+    "@ulixee/commons": "2.0.0-alpha.18",
+    "@ulixee/default-browser-emulator": "2.0.0-alpha.18",
+    "@ulixee/default-human-emulator": "2.0.0-alpha.18",
+    "@ulixee/hero-interfaces": "2.0.0-alpha.18",
+    "@ulixee/hero-plugin-utils": "2.0.0-alpha.18",
+    "@ulixee/hero-timetravel": "2.0.0-alpha.18",
+    "@ulixee/js-path": "2.0.0-alpha.18",
+    "@ulixee/net": "2.0.0-alpha.18",
+    "@ulixee/unblocked-agent": "2.0.0-alpha.18",
+    "@ulixee/unblocked-agent-mitm": "2.0.0-alpha.18",
+    "@ulixee/unblocked-specification": "2.0.0-alpha.18",
+    "better-sqlite3": "^8.0.1",
+    "moment": "^2.29.4",
+    "nanoid": "^3.1.30",
+    "ws": "^7.4.6"
+  },
+  "main": "index.js"
+}

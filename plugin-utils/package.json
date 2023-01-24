@@ -1,0 +1,29 @@
+{
+  "name": "@ulixee/hero-plugin-utils",
+  "version": "2.0.0-alpha.18",
+  "description": "Base classes to build hero plugins",
+  "homepage": "https://ulixee.org",
+  "repository": "git@github.com:ulixee/hero.git",
+  "bugs": {
+    "url": "https://github.com/ulixee/hero/issues"
+  },
+  "license": "MIT",
+  "author": "Data Liberation Foundation",
+  "contributors": [
+    "Caleb Clark",
+    "Blake Byrnes"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@ulixee/commons": "2.0.0-alpha.18",
+    "@ulixee/hero-interfaces": "2.0.0-alpha.18",
+    "@ulixee/unblocked-specification": "2.0.0-alpha.18"
+  },
+  "main": "index.js"
+}
